@@ -1,0 +1,17 @@
+{
+  "0": {
+    "avg_disease_rate_percent": 10.0,
+    "label": "Low chance",
+    "size": 80
+  },
+  "2": {
+    "avg_disease_rate_percent": 31.6,
+    "label": "Moderate chance",
+    "size": 114
+  },
+  "1": {
+    "avg_disease_rate_percent": 90.3,
+    "label": "High chance",
+    "size": 103
+  }
+}

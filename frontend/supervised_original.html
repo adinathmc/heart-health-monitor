@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Diagnosis Dashboard - Supervised Learning</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Custom Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            medical: {
+              primary: '#0F4C81', // Dark blue for headings
+              accent: '#FF6B00',  // Orange for buttons
+              lightBlue: '#E1F0FF', // Input backgrounds
+              bg: '#F8FAFC',      // Main page background
+              teal: '#2DD4BF',    // Success/Low risk color
+              warning: '#F97316'   // Medium risk color
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for UI Polish -->
+<style data-purpose="custom-layout-styles">
+    body {
+      background-color: #F8FAFC;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    .card-shadow {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    .input-field {
+      @apply w-full bg-blue-50 border-transparent rounded-md px-4 py-2 text-slate-700 focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all;
+    }
+    .progress-bar {
+      @apply h-2 w-full bg-slate-100 rounded-full overflow-hidden mt-2;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-800">
+<!-- BEGIN: MainHeader -->
+<header class="bg-white border-b border-slate-200">
+<nav class="container mx-auto px-8 flex items-center h-16">
+<ul class="flex space-x-8 h-full">
+<li class="relative flex items-center">
+<a class="text-medical-primary font-bold text-sm tracking-wide" href="#">Supervised</a>
+<!-- Active Indicator -->
+<div class="absolute bottom-0 left-0 w-full h-1 bg-medical-primary rounded-t-full"></div>
+</li>
+<li class="flex items-center">
+<a class="text-slate-400 font-medium text-sm tracking-wide hover:text-slate-600 transition-colors" href="#">Unsupervised</a>
+</li>
+</ul>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<main class="container mx-auto px-8 py-12 max-w-7xl">
+<!-- BEGIN: DashboardIntro -->
+<section class="mb-12" data-purpose="intro-section">
+<h1 class="text-4xl font-bold text-medical-primary mb-4">Diagnosis Dashboard</h1>
+<p class="text-slate-500 max-w-2xl leading-relaxed">
+        Supervised learning models for predictive heart disease analysis based on clinical data points.
+      </p>
+</section>
+<!-- END: DashboardIntro -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- BEGIN: PatientDataInput -->
+<aside class="lg:col-span-4 bg-white rounded-2xl p-8 card-shadow" data-purpose="input-form-container">
+<div class="flex items-center gap-3 mb-8">
+<svg class="w-6 h-6 text-medical-primary" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<h2 class="text-xl font-bold text-medical-primary">Patient Data Input</h2>
+</div>
+<form class="space-y-5">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Age</label>
+<input class="input-field bg-[#EAF5FF]" type="number" value="52"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Sex</label>
+<select class="input-field bg-[#EAF5FF]">
+<option selected="">Male</option>
+<option>Female</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Resting Blood Pressure (mm Hg)</label>
+<input class="input-field bg-[#EAF5FF]" type="number" value="125"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Serum Cholestoral (mg/dl)</label>
+<input class="input-field bg-[#EAF5FF]" type="number" value="212"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Maximum Heart Rate Achieved</label>
+<input class="input-field bg-[#EAF5FF]" type="number" value="168"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Chest Pain Type</label>
+<select class="input-field bg-[#EAF5FF]">
+<option selected="">Typical Angina</option>
+<option>Atypical Angina</option>
+<option>Non-anginal Pain</option>
+<option>Asymptomatic</option>
+</select>
+</div>
+<button class="w-full bg-medical-accent hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 mt-4" type="submit">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+            Run Prediction Model
+          </button>
+</form>
+</aside>
+<!-- END: PatientDataInput -->
+<!-- BEGIN: ResultsSection -->
+<div class="lg:col-span-8 space-y-8">
+<!-- BEGIN: DiagnosisProbabilityCard -->
+<div class="bg-gradient-to-br from-[#F0FCFB] to-[#F5F8FF] rounded-2xl p-10 border border-teal-50 flex flex-col md:flex-row justify-between items-center gap-6" data-purpose="main-result-card">
+<div class="max-w-md">
+<h2 class="text-3xl font-bold text-medical-primary mb-2">Diagnosis Probability</h2>
+<p class="text-slate-500">Ensemble model consensus indicating low risk of heart disease.</p>
+</div>
+<div class="bg-white rounded-xl p-4 flex items-center gap-6 shadow-sm border border-slate-100 min-w-[240px]">
+<div class="w-12 h-12 bg-teal-50 rounded-full flex items-center justify-center text-teal-500">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+</svg>
+</div>
+<div>
+<div class="text-5xl font-black text-teal-400">24.9%</div>
+<div class="text-[10px] font-bold text-slate-400 tracking-[0.2em] uppercase mt-1">Low Chance</div>
+</div>
+</div>
+</div>
+<!-- END: DiagnosisProbabilityCard -->
+<!-- BEGIN: ConfidenceBreakdown -->
+<div data-purpose="breakdown-container">
+<h3 class="text-xl font-bold text-medical-primary mb-6">Model Confidence Breakdown</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Model: Decision Tree -->
+<div class="bg-white p-6 rounded-xl card-shadow border border-slate-50">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-bold text-medical-primary text-lg">Decision Tree</h4>
+<span class="text-teal-400 font-bold text-xl">1.8%</span>
+</div>
+<div class="progress-bar">
+<div class="h-full bg-teal-400 rounded-full" style="width: 1.8%"></div>
+</div>
+<p class="mt-4 text-xs text-slate-400 leading-relaxed">High certainty on current feature splits.</p>
+</div>
+<!-- Model: K-Nearest Neighbors -->
+<div class="bg-white p-6 rounded-xl card-shadow border border-slate-50">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-bold text-medical-primary text-lg">K-Nearest Neighbors</h4>
+<span class="text-medical-warning font-bold text-xl">28.6%</span>
+</div>
+<div class="progress-bar">
+<div class="h-full bg-medical-warning rounded-full" style="width: 28.6%"></div>
+</div>
+<p class="mt-4 text-xs text-slate-400 leading-relaxed">Moderate variance in local cluster data.</p>
+</div>
+<!-- Model: Logistic Regression -->
+<div class="bg-white p-6 rounded-xl card-shadow border border-slate-50">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-bold text-medical-primary text-lg">Logistic Regression</h4>
+<span class="text-red-400 font-bold text-xl">41.3%</span>
+</div>
+<div class="progress-bar">
+<div class="h-full bg-red-400 rounded-full" style="width: 41.3%"></div>
+</div>
+<p class="mt-4 text-xs text-slate-400 leading-relaxed">Approaching threshold boundary for risk classification.</p>
+</div>
+<!-- Model: SVM -->
+<div class="bg-white p-6 rounded-xl card-shadow border border-slate-50">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-bold text-medical-primary text-lg">SVM</h4>
+<span class="text-medical-warning font-bold text-xl">28.0%</span>
+</div>
+<div class="progress-bar">
+<div class="h-full bg-medical-warning rounded-full" style="width: 28.0%"></div>
+</div>
+<p class="mt-4 text-xs text-slate-400 leading-relaxed">Margin separation indicates clear safe zone.</p>
+</div>
+</div>
+</div>
+<!-- END: ConfidenceBreakdown -->
+</div>
+<!-- END: ResultsSection -->
+</div>
+</main>
+</body></html>
