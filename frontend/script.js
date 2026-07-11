@@ -105,10 +105,15 @@ function getModelDescription(key, pct, bucket) {
       ? "Patient profile sits securely within low-risk K-nearest neighbors coordinate space."
       : "Moderate variance in local cluster data. High density of nearest neighbors exhibit cardiac markers.";
   }
-  if (key === "logistic") {
+  if (key === "linear_regression") {
     return pct < 34
       ? "Linear Regression model output indicates low predicted probability of cardiovascular disease."
       : "Approaching threshold boundary. Linear decision boundary indicates probability gradient shift.";
+  }
+  if (key === "logistic_regression") {
+    return pct < 34
+      ? "Logistic Regression model indicates low probability with sigmoidal classification boundary stability."
+      : "Logistic curve shifts to high risk quadrant. Clinical probability is highly elevated.";
   }
   if (key === "svm") {
     return pct < 34
@@ -161,7 +166,8 @@ function renderPrediction(result) {
 
   // Model breakdown cards
   const namesMap = {
-    logistic: "Linear Regression",
+    linear_regression: "Linear Regression",
+    logistic_regression: "Logistic Regression",
     knn: "K-Nearest Neighbors",
     decision_tree: "Decision Tree",
     svm: "Support Vector Machine (SVM)",
@@ -170,9 +176,10 @@ function renderPrediction(result) {
   const container = document.getElementById("model-cards");
   container.innerHTML = "";
   
-  Object.entries(result.models).forEach(([key, val]) => {
+  Object.entries(result.models).forEach(([key, val], index, arr) => {
     const card = document.createElement("div");
-    card.className = "glass-panel model-breakdown-card";
+    const isLastOdd = index === arr.length - 1 && arr.length % 2 !== 0;
+    card.className = "glass-panel model-breakdown-card" + (isLastOdd ? " col-span-2" : "");
     card.innerHTML = `
       <div class="model-card-header">
         <h4 class="model-name">${namesMap[key] || key}</h4>
@@ -193,7 +200,8 @@ async function loadMetrics() {
     const res = await fetch(`${API_BASE}/metrics`);
     const metrics = await res.json();
     const namesMap = {
-      logistic: "Linear Regression",
+      linear_regression: "Linear Regression",
+      logistic_regression: "Logistic Regression",
       knn: "KNN",
       decision_tree: "Decision Tree",
       svm: "SVM",
@@ -208,7 +216,7 @@ async function loadMetrics() {
         datasets: [{
           label: "Accuracy (%)",
           data: accuracies,
-          backgroundColor: ["#003178", "#00bfa5", "#ff8f00", "#f50057"],
+          backgroundColor: ["#003178", "#7c3aed", "#00bfa5", "#ff8f00", "#f50057"],
           borderRadius: 8,
           barThickness: 32,
         }],

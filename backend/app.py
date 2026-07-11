@@ -28,7 +28,8 @@ with open(f"{MODELS_DIR}/feature_order.json") as f:
 scaler = joblib.load(f"{MODELS_DIR}/scaler.pkl")
 
 supervised_models = {
-    "logistic": joblib.load(f"{MODELS_DIR}/logistic.pkl"),
+    "linear_regression": joblib.load(f"{MODELS_DIR}/linear_regression.pkl"),
+    "logistic_regression": joblib.load(f"{MODELS_DIR}/logistic_regression.pkl"),
     "knn": joblib.load(f"{MODELS_DIR}/knn.pkl"),
     "decision_tree": joblib.load(f"{MODELS_DIR}/decision_tree.pkl"),
     "svm": joblib.load(f"{MODELS_DIR}/svm.pkl"),

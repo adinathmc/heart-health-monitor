@@ -53,7 +53,8 @@ def main():
 
     # 4. Define models. probability=True on SVC is required for predict_proba.
     models = {
-        "logistic": LinearRegression(),
+        "linear_regression": LinearRegression(),
+        "logistic_regression": LogisticRegression(max_iter=1000, random_state=42),
         "knn": KNeighborsClassifier(n_neighbors=7),
         "decision_tree": DecisionTreeClassifier(max_depth=4, random_state=42),
         "svm": SVC(probability=True, kernel="rbf", random_state=42),
@@ -65,7 +66,7 @@ def main():
         model.fit(X_train_scaled, y_train)
         y_pred = model.predict(X_test_scaled)
 
-        if name == "logistic":
+        if name == "linear_regression":
             # Threshold continuous predictions at 0.5 for classification metrics evaluation
             y_pred_binary = (y_pred >= 0.5).astype(int)
         else:
