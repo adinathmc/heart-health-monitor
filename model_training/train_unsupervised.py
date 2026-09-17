@@ -1,6 +1,6 @@
 """
 train_unsupervised.py
-Runs K-Means clustering (k=3) and PCA (2D) on the same scaled heart disease
+Runs K-Means clustering (k=2) and PCA (2D) on the same scaled heart disease
 features (WITHOUT the target column - unsupervised never sees labels).
 
 After clustering, we peek at the actual target values only to LABEL each
@@ -12,7 +12,7 @@ Saves:
   - cluster_points.json  -> every patient's 2D PCA point + cluster id +
                             cluster risk label (for the frontend scatter plot)
   - cluster_summary.json -> per-cluster average disease rate + label + size
-  - elbow_data.json       -> inertia for k=1..8, to justify k=3 in your slides
+  - elbow_data.json       -> inertia for k=1..8, to justify k=2 in your slides
 
 Run: python3 train_unsupervised.py
 """
@@ -34,7 +34,7 @@ FEATURE_ORDER = [
     "thalach", "exang", "oldpeak", "slope", "ca", "thal"
 ]
 
-K = 3  # fixed cluster count
+K = 2  # fixed cluster count
 
 
 def main():
@@ -48,7 +48,7 @@ def main():
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
-    # 2. Elbow method data (k=1 to 8) - for justifying k=3 in your slides
+    # 2. Elbow method data (k=1 to 8) - for justifying k=2 in your slides
     elbow_data = []
     for k in range(1, 9):
         km = KMeans(n_clusters=k, random_state=42, n_init=10)
@@ -58,7 +58,7 @@ def main():
     with open(f"{MODELS_DIR}/elbow_data.json", "w") as f:
         json.dump(elbow_data, f, indent=2)
 
-    # 3. Fit final KMeans with k=3
+    # 3. Fit final KMeans with k=2
     kmeans = KMeans(n_clusters=K, random_state=42, n_init=10)
     cluster_ids = kmeans.fit_predict(X_scaled)
 
@@ -67,9 +67,9 @@ def main():
     points_2d = pca.fit_transform(X_scaled)
 
     # 5. Label each cluster by its average disease rate (peek at y here only).
-    # We RANK the 3 clusters relative to each other (lowest -> Low,
-    # middle -> Moderate, highest -> High) rather than using fixed percentage
-    # thresholds. This guarantees a clean 3-way Low/Moderate/High story
+    # We RANK the 2 clusters relative to each other (lowest -> Low chance,
+    # highest -> High chance) rather than using fixed percentage
+    # thresholds. This guarantees a clean 2-way Low/High story
     # regardless of where the absolute rates happen to fall.
     raw_rates = {}
     for cid in range(K):
@@ -77,7 +77,7 @@ def main():
         raw_rates[cid] = float(y[mask].mean())
 
     ranked_cids = sorted(raw_rates, key=lambda c: raw_rates[c])  # lowest -> highest
-    rank_labels = ["Low chance", "Moderate chance", "High chance"]
+    rank_labels = ["Low chance", "High chance"]
 
     cluster_summary = {}
     for rank, cid in enumerate(ranked_cids):

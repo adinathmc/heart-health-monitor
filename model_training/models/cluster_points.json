@@ -23,8 +23,8 @@
   {
     "x": -0.478,
     "y": 1.406,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -37,8 +37,8 @@
   {
     "x": -2.199,
     "y": 0.334,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -72,8 +72,8 @@
   {
     "x": -0.151,
     "y": 0.98,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -93,36 +93,36 @@
   {
     "x": -2.018,
     "y": 1.188,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.505,
     "y": -0.299,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.355,
     "y": 0.392,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.474,
     "y": 1.808,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -1.023,
     "y": 0.356,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -135,15 +135,15 @@
   {
     "x": -2.225,
     "y": 0.198,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": 0.127,
     "y": 0.402,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -156,8 +156,8 @@
   {
     "x": -0.537,
     "y": -0.467,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -198,8 +198,8 @@
   {
     "x": -1.352,
     "y": 0.566,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -226,29 +226,29 @@
   {
     "x": -1.219,
     "y": -1.112,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": 0.1,
     "y": 0.906,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.633,
     "y": 1.289,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -2.148,
     "y": 0.906,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -289,8 +289,8 @@
   {
     "x": -1.255,
     "y": 1.803,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -303,8 +303,8 @@
   {
     "x": -0.712,
     "y": -0.716,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -324,8 +324,8 @@
   {
     "x": -1.38,
     "y": 1.574,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -345,8 +345,8 @@
   {
     "x": 0.266,
     "y": -0.181,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -359,22 +359,22 @@
   {
     "x": -0.19,
     "y": 1.353,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.189,
     "y": 0.275,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -2.665,
     "y": 0.198,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -394,29 +394,29 @@
   {
     "x": -0.112,
     "y": 0.886,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -1.209,
     "y": 2.121,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": 0.254,
     "y": -0.237,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.194,
     "y": 0.391,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -464,15 +464,15 @@
   {
     "x": 0.346,
     "y": 0.044,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -0.186,
     "y": 0.047,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -485,8 +485,8 @@
   {
     "x": 0.119,
     "y": 0.685,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -513,15 +513,15 @@
   {
     "x": 0.193,
     "y": -0.18,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -1.776,
     "y": 1.015,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -548,8 +548,8 @@
   {
     "x": -1.718,
     "y": -0.048,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -576,8 +576,8 @@
   {
     "x": -2.156,
     "y": -0.441,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -590,22 +590,22 @@
   {
     "x": -2.279,
     "y": -0.222,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -2.107,
     "y": 0.031,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.581,
     "y": -0.182,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -660,8 +660,8 @@
   {
     "x": 0.147,
     "y": 1.359,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 1
   },
   {
@@ -681,29 +681,29 @@
   {
     "x": -1.58,
     "y": 0.374,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.976,
     "y": 0.504,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -2.057,
     "y": 0.493,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -3.218,
     "y": 1.095,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -730,22 +730,22 @@
   {
     "x": -1.444,
     "y": 0.662,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": 0.336,
     "y": 1.399,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 1
   },
   {
     "x": 0.441,
     "y": 0.346,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 1
   },
   {
@@ -758,8 +758,8 @@
   {
     "x": -0.124,
     "y": 2.421,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -779,8 +779,8 @@
   {
     "x": -1.989,
     "y": 0.586,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -800,15 +800,15 @@
   {
     "x": -1.15,
     "y": 1.425,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.23,
     "y": -1.085,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -849,8 +849,8 @@
   {
     "x": -0.25,
     "y": 1.975,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -863,8 +863,8 @@
   {
     "x": -0.282,
     "y": -2.265,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -891,8 +891,8 @@
   {
     "x": -2.745,
     "y": 0.994,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -905,29 +905,29 @@
   {
     "x": 0.041,
     "y": 0.602,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.434,
     "y": 2.24,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -3.409,
     "y": 0.977,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.93,
     "y": 0.106,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -968,29 +968,29 @@
   {
     "x": -0.164,
     "y": -0.455,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.258,
     "y": 0.32,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.147,
     "y": -1.359,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -2.467,
     "y": -0.168,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1010,8 +1010,8 @@
   {
     "x": -2.116,
     "y": 1.147,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1024,15 +1024,15 @@
   {
     "x": -2.721,
     "y": 1.211,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -2.193,
     "y": -0.482,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1045,8 +1045,8 @@
   {
     "x": -0.592,
     "y": -0.872,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1059,8 +1059,8 @@
   {
     "x": 0.866,
     "y": -3.25,
-    "cluster": 0,
-    "cluster_label": "Low chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 0
   },
   {
@@ -1087,15 +1087,15 @@
   {
     "x": 0.315,
     "y": 1.006,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 1
   },
   {
     "x": 0.123,
     "y": -0.403,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1108,15 +1108,15 @@
   {
     "x": 0.1,
     "y": 0.12,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.74,
     "y": 1.395,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1143,15 +1143,15 @@
   {
     "x": -1.438,
     "y": -0.444,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.185,
     "y": 1.578,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1164,8 +1164,8 @@
   {
     "x": -0.316,
     "y": 1.611,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1220,8 +1220,8 @@
   {
     "x": 0.35,
     "y": 0.531,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 0
   },
   {
@@ -1234,22 +1234,22 @@
   {
     "x": -1.107,
     "y": 0.171,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.578,
     "y": -1.435,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.078,
     "y": 0.785,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1262,8 +1262,8 @@
   {
     "x": -1.713,
     "y": -0.744,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1290,8 +1290,8 @@
   {
     "x": -0.555,
     "y": 1.163,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1304,8 +1304,8 @@
   {
     "x": -0.736,
     "y": -1.797,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1318,8 +1318,8 @@
   {
     "x": -2.089,
     "y": 0.895,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1353,8 +1353,8 @@
   {
     "x": 0.268,
     "y": -2.515,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1374,8 +1374,8 @@
   {
     "x": -1.028,
     "y": -1.612,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1395,8 +1395,8 @@
   {
     "x": -0.64,
     "y": 0.342,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1409,8 +1409,8 @@
   {
     "x": -1.427,
     "y": 2.242,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1437,15 +1437,15 @@
   {
     "x": -1.971,
     "y": -0.04,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": 0.547,
     "y": -0.588,
-    "cluster": 0,
-    "cluster_label": "Low chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 1
   },
   {
@@ -1458,15 +1458,15 @@
   {
     "x": -0.132,
     "y": 2.322,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -0.872,
     "y": 0.822,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1479,15 +1479,15 @@
   {
     "x": -1.45,
     "y": 0.912,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -0.346,
     "y": 0.749,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1507,15 +1507,15 @@
   {
     "x": 1.218,
     "y": -1.392,
-    "cluster": 0,
-    "cluster_label": "Low chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 0
   },
   {
     "x": -1.322,
     "y": -0.748,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1549,8 +1549,8 @@
   {
     "x": 0.758,
     "y": -0.25,
-    "cluster": 0,
-    "cluster_label": "Low chance",
+    "cluster": 1,
+    "cluster_label": "High chance",
     "actual_target": 1
   },
   {
@@ -1563,8 +1563,8 @@
   {
     "x": -1.655,
     "y": 1.569,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1605,8 +1605,8 @@
   {
     "x": -0.113,
     "y": 0.666,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1640,8 +1640,8 @@
   {
     "x": -0.311,
     "y": 1.121,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1654,15 +1654,15 @@
   {
     "x": -2.545,
     "y": 0.497,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -2.618,
     "y": 1.275,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1682,8 +1682,8 @@
   {
     "x": 0.201,
     "y": -0.392,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1703,8 +1703,8 @@
   {
     "x": -0.557,
     "y": 1.436,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1717,15 +1717,15 @@
   {
     "x": -0.118,
     "y": 1.189,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -1.091,
     "y": -1.083,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1759,8 +1759,8 @@
   {
     "x": -1.295,
     "y": 0.968,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1787,15 +1787,15 @@
   {
     "x": -0.772,
     "y": -1.682,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.916,
     "y": 0.611,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1822,8 +1822,8 @@
   {
     "x": -2.418,
     "y": 1.114,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1850,15 +1850,15 @@
   {
     "x": -1.448,
     "y": 1.299,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": -2.138,
     "y": 1.404,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1892,15 +1892,15 @@
   {
     "x": -1.392,
     "y": -0.316,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
     "x": 0.115,
     "y": -1.063,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1920,8 +1920,8 @@
   {
     "x": -1.26,
     "y": -1.15,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1941,8 +1941,8 @@
   {
     "x": -2.354,
     "y": 0.509,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -1955,15 +1955,15 @@
   {
     "x": -3.128,
     "y": 1.583,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -0.178,
     "y": 0.463,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {
@@ -1983,15 +1983,15 @@
   {
     "x": -1.143,
     "y": 0.24,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
     "x": -1.171,
     "y": 0.518,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -2032,8 +2032,8 @@
   {
     "x": -3.152,
     "y": 1.614,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 0
   },
   {
@@ -2053,8 +2053,8 @@
   {
     "x": -0.693,
     "y": 1.477,
-    "cluster": 2,
-    "cluster_label": "Moderate chance",
+    "cluster": 0,
+    "cluster_label": "Low chance",
     "actual_target": 1
   },
   {

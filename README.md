@@ -10,7 +10,7 @@ heart-health-monitor/
 ├── model_training/
 │   ├── data/heart.csv              # UCI Heart Disease dataset (297 patients)
 │   ├── train_supervised.py         # Trains Logistic Regression, KNN, Decision Tree, SVM
-│   ├── train_unsupervised.py       # K-Means (k=3) + PCA clustering
+│   ├── train_unsupervised.py       # K-Means (k=2) + PCA clustering
 │   └── models/                     # All trained models + JSON artifacts (generated)
 ├── backend/
 │   ├── app.py                      # Flask API (no auth)
@@ -62,7 +62,7 @@ Then open **http://127.0.0.1:8080** in your browser.
 |---|---|---|
 | `/predict` | POST | Returns chance % of heart disease from 4 models + overall average |
 | `/metrics` | GET | Accuracy/precision/recall/F1 for each model |
-| `/cluster` | POST | Which risk cluster (Low/Moderate/High) a patient falls into |
+| `/cluster` | POST | Which risk cluster (Low/High) a patient falls into |
 | `/cluster-data` | GET | All 297 patients' 2D PCA coordinates + cluster labels |
 | `/health` | GET | Simple health check |
 
@@ -81,7 +81,7 @@ Then open **http://127.0.0.1:8080** in your browser.
 - Supervised models answer **"what is the chance?"** — a probability from 0-100%.
 - Unsupervised K-Means answers **"what natural groups exist?"** — found without ever
   seeing the diagnosis label, then labeled after the fact by checking each cluster's
-  actual disease rate (Low ~10%, Moderate ~32%, High ~90%).
+  actual disease rate (Low ~21%, High ~88%).
 - This dual view (prediction vs. pattern discovery) is the core narrative: supervised
   learning needs labeled data to predict, unsupervised learning finds structure without it.
 

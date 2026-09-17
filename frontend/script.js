@@ -314,17 +314,15 @@ function renderClusterLegend(summary) {
   // order by average disease rate
   const order = Object.entries(summary).sort((a, b) => a[1].avg_disease_rate_percent - b[1].avg_disease_rate_percent);
   
-  order.forEach(([cid, info]) => {
+  order.forEach(([cid, info], idx) => {
     const row = document.createElement("div");
     row.className = "profile-row";
     
-    let clusterLetter = "A";
+    const clusterLetter = String.fromCharCode(65 + idx); // 'A', 'B', etc.
     let desc = "Stable vitals, routine monitoring.";
     if (info.label === "Moderate chance") {
-      clusterLetter = "B";
       desc = "Elevated markers, requires review.";
     } else if (info.label === "High chance") {
-      clusterLetter = "C";
       desc = "Critical indicators, immediate action.";
     }
 
@@ -346,8 +344,11 @@ function renderClusterLegend(summary) {
 }
 
 function renderScatter(points) {
-  const byLabel = { "Low chance": [], "Moderate chance": [], "High chance": [] };
-  points.forEach(p => byLabel[p.cluster_label].push({ x: p.x, y: p.y }));
+  const byLabel = {};
+  points.forEach(p => {
+    if (!byLabel[p.cluster_label]) byLabel[p.cluster_label] = [];
+    byLabel[p.cluster_label].push({ x: p.x, y: p.y });
+  });
 
   // Find min/max coordinate ranges to set original boundaries
   const xs = points.map(p => p.x);
@@ -357,39 +358,33 @@ function renderScatter(points) {
   originalYMin = Math.min(...ys) - 0.5;
   originalYMax = Math.max(...ys) + 0.5;
 
+  const colorMap = {
+    "Low chance": { bg: "rgba(0, 191, 165, 0.4)", border: "#00bfa5" },
+    "Moderate chance": { bg: "rgba(255, 143, 0, 0.4)", border: "#ff8f00" },
+    "High chance": { bg: "rgba(245, 0, 87, 0.4)", border: "#f50057" },
+  };
+
+  const labelOrder = ["Low chance", "Moderate chance", "High chance"];
+  const datasets = [];
+  labelOrder.forEach(label => {
+    if (byLabel[label] && byLabel[label].length > 0) {
+      datasets.push({
+        label: label,
+        data: byLabel[label],
+        backgroundColor: colorMap[label].bg,
+        borderColor: colorMap[label].border,
+        borderWidth: 1,
+        pointRadius: 6,
+        pointHoverRadius: 8
+      });
+    }
+  });
+
   const ctx = document.getElementById("scatter-chart");
   scatterChartInstance = new Chart(ctx, {
     type: "scatter",
     data: {
-      datasets: [
-        { 
-          label: "Low chance", 
-          data: byLabel["Low chance"], 
-          backgroundColor: "rgba(0, 191, 165, 0.4)",
-          borderColor: "#00bfa5",
-          borderWidth: 1,
-          pointRadius: 6,
-          pointHoverRadius: 8
-        },
-        { 
-          label: "Moderate chance", 
-          data: byLabel["Moderate chance"], 
-          backgroundColor: "rgba(255, 143, 0, 0.4)",
-          borderColor: "#ff8f00",
-          borderWidth: 1,
-          pointRadius: 6,
-          pointHoverRadius: 8
-        },
-        { 
-          label: "High chance", 
-          data: byLabel["High chance"], 
-          backgroundColor: "rgba(245, 0, 87, 0.4)",
-          borderColor: "#f50057",
-          borderWidth: 1,
-          pointRadius: 6,
-          pointHoverRadius: 8
-        },
-      ],
+      datasets: datasets,
     },
     options: {
       responsive: true,

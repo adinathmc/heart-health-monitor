@@ -152,19 +152,18 @@ The “overall” value is a simple arithmetic mean, not a separately trained en
 1. Reads the CSV and selects the feature columns.
 2. Fits a new `StandardScaler` on all 297 rows.
 3. Calculates K-Means inertia for `k=1` through `k=8` and saves it for an elbow-method presentation chart.
-4. Fits final `KMeans(n_clusters=3, random_state=42, n_init=10)`.
+4. Fits final `KMeans(n_clusters=2, random_state=42, n_init=10)`.
 5. Fits `PCA(n_components=2)` for a 2D plot.
 6. Only after clustering, examines the actual target values to calculate each cluster's disease rate.
-7. Ranks clusters by disease rate and assigns interpretive labels: Low, Moderate, High.
+7. Ranks clusters by disease rate and assigns interpretive labels: Low, High.
 8. Saves cluster summaries, all 2D points, and the K-Means/PCA/scaler artifacts.
 
 The current checked-in summary is:
 
 | Cluster ID | Interpretive label | Average disease rate | Size |
 |---:|---|---:|---:|
-| 0 | Low chance | 10.0% | 80 |
-| 2 | Moderate chance | 31.6% | 114 |
-| 1 | High chance | 90.3% | 103 |
+| 0 | Low chance | 20.5% | 185 |
+| 1 | High chance | 88.4% | 112 |
 
 Cluster IDs are arbitrary K-Means identifiers. The labels are assigned by ranking disease rates, so a future retraining can change which numeric ID means Low, Moderate, or High.
 
@@ -174,7 +173,7 @@ The `/cluster` endpoint extracts and scales the submitted patient features with 
 
 The `/cluster-data` endpoint returns all precomputed patient points and the cluster summary. Each point includes `x`, `y`, `cluster`, `cluster_label`, and `actual_target`. Because the actual target is included in this visualization artifact, it is suitable for an academic demonstration but should be treated as sensitive ground-truth metadata in any real deployment.
 
-The UI displays K=3 and Euclidean distance as disabled controls. These are descriptive controls only; the browser cannot change the trained K-Means configuration.
+The UI displays K=2 and Euclidean distance as disabled controls. These are descriptive controls only; the browser cannot change the trained K-Means configuration.
 
 ## 9. Flask API Contract
 
@@ -301,4 +300,4 @@ Open `http://127.0.0.1:8080`. The API is available at `http://127.0.0.1:5000`.
 
 ## 16. One-Paragraph LLM Brief
 
-This is a small Flask plus vanilla JavaScript academic heart-disease analytics demo using the UCI Cleveland dataset. Two Python scripts train separate pipelines: supervised models use 13 clinical features, a train-only StandardScaler, and five estimators whose test metrics are saved as JSON; unsupervised training uses a separate full-data StandardScaler, K-Means with fixed `k=3`, and PCA to create labeled-by-post-hoc-disease-rate patient clusters and 2D plot points. Flask loads duplicated serialized artifacts from `backend/models` and exposes `/predict`, `/metrics`, `/cluster`, `/cluster-data`, and `/health`; the browser dashboard sends form JSON to that API, renders prediction probabilities and metrics, lazy-loads the cluster map, highlights the submitted patient, and exports the current payload. The application has no authentication or persistence, runs locally on ports 5000 and 8080, uses relative runtime paths, and must be treated as an educational visualization rather than a medical diagnostic system.
+This is a small Flask plus vanilla JavaScript academic heart-disease analytics demo using the UCI Cleveland dataset. Two Python scripts train separate pipelines: supervised models use 13 clinical features, a train-only StandardScaler, and five estimators whose test metrics are saved as JSON; unsupervised training uses a separate full-data StandardScaler, K-Means with fixed `k=2`, and PCA to create labeled-by-post-hoc-disease-rate patient clusters and 2D plot points. Flask loads duplicated serialized artifacts from `backend/models` and exposes `/predict`, `/metrics`, `/cluster`, `/cluster-data`, and `/health`; the browser dashboard sends form JSON to that API, renders prediction probabilities and metrics, lazy-loads the cluster map, highlights the submitted patient, and exports the current payload. The application has no authentication or persistence, runs locally on ports 5000 and 8080, uses relative runtime paths, and must be treated as an educational visualization rather than a medical diagnostic system.
